@@ -24,7 +24,7 @@ public class DemoApplication {
 		//Calculator class
 		Calculator calc = new Calculator(planet1,planet2,speed,speedUnit);
 		calc.convert();
-		double convertedTime = calc.calculateTime();
+		long convertedTime = calc.calculateTime();
 		//
 
 
