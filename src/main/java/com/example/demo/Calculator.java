@@ -22,14 +22,30 @@ public class Calculator {
     public void convert(){
 //        speed in km/day
         switch (speedUnit) {
-            case "km/h" -> speed = speed * 24;
-            case "mi/h" -> speed = speed * 38.6243;
-            case "m/h" -> speed = speed * 0.024;
-            case "ft/h" -> speed = speed * 0.0073152;
-            case "km/s" -> speed = speed * 86400;
-            case "mi/s" -> speed = speed * 139047;
-            case "m/s" -> speed = speed * 86.4;
-            case "ft/s" -> speed = speed * 26.3347;
+            case "km/h" :
+                speed = speed * 24;
+                break;
+            case "mi/h":
+                speed = speed * 38.6243;
+                break;
+            case "m/h":
+                speed = speed * 0.024;
+                break;
+            case "ft/h":
+                speed = speed * 0.0073152;
+                break;
+            case "km/s":
+                speed = speed * 86400;
+                break;
+            case "mi/s":
+                speed = speed * 139047;
+                break;
+            case "m/s":
+                speed = speed * 86.4;
+                break;
+            case "ft/s":
+                speed = speed * 26.3347;
+                break;
         }
     }
 }
