@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.json.simple.JSONObject;
 
 @SpringBootApplication
@@ -15,6 +16,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 // make calculation function that will take in parameters
+	@CrossOrigin(origins = "http://localhost:3000")
 	@GetMapping("/planetCalc") // link here is equivalent of app.get("linkName") in express
 	// @RequestParam Type variableName
 	// Request to give calculator planet1 planet2 speed speedUnit
