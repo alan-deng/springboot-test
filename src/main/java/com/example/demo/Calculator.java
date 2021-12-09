@@ -14,9 +14,10 @@ public class Calculator {
         this.speedUnit = sUnit;
     }
 
-    public long calculateTime(){
+    public double calculateTime(){
         long distance = planet1.getDistance(planet2);
-        return (long) (distance/this.speed);
+        double time = distance/this.speed;
+        return time;
     }
 
     public void convert(){
