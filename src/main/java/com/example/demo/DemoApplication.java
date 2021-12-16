@@ -16,7 +16,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 // make calculation function that will take in parameters
-	@CrossOrigin(origins = "http://localhost:3000")
+	@CrossOrigin(origins = {"http://localhost:3000", "https://space-java.surge.sh"})
 	@GetMapping("/planetCalc") // link here is equivalent of app.get("linkName") in express
 	// @RequestParam Type variableName
 	// Request to give calculator planet1 planet2 speed speedUnit
